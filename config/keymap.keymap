@@ -114,7 +114,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
             >;
             label = "scroll";
-                layer = <5>;
         };
     };
 };
