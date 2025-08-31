@@ -58,6 +58,15 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
         };
+
+        thum_cruster: thum_cruster {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUM_CRUSTER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
     };
 
     keymap {
@@ -65,11 +74,11 @@
 
         base {
             bindings = <
-&none  &none             &none       &none            &none         &none                                           &none        &none              &none            &none            &none                 &none
-&none  &kp Q             &kp W       &kp E            &kp R         &kp T                                           &kp Y        &kp U              &kp I            &kp O            &kp P                 &none
-&none  &mt LCTRL A       &mt LGUI S  &mt RIGHT_ALT D  &mt LSHIFT F  &kp G        &none            &none             &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_GUI L  &mt LCTRL MINUS       &none
-&none  &mt LEFT_SHIFT Z  &kp X       &kp C            &kp V         &kp B        &kp PRINTSCREEN  &tog 4            &kp N        &kp M              &kp COMMA        &kp DOT          &mt RIGHT_SHIFT FSLH  &none
-&none  &mo 4             &mkp LCLK   &mkp RCLK        &kp ESCAPE    &lt 1 LANG2  &lt 5 SPACE      &mt RSHIFT ENTER  &lt 2 LANG1  &none              &none            &none            &mo 4                 &none
+&none  &none                  &none                 &none                      &none                   &none                                                     &none                  &none                        &none                      &none                      &none                             &none
+&none  &kp Q                  &kp W                 &kp E                      &kp R                   &kp T                                                     &kp Y                  &kp U                        &kp I                      &kp O                      &kp P                             &none
+&none  &home_row_mod LCTRL A  &home_row_mod LGUI S  &home_row_mod RIGHT_ALT D  &home_row_mod LSHIFT F  &kp G                  &none            &none             &kp H                  &home_row_mod RIGHT_SHIFT J  &home_row_mod RIGHT_ALT K  &home_row_mod RIGHT_GUI L  &hold_preferred LCTRL MINUS       &none
+&none  &mt LEFT_SHIFT Z       &kp X                 &kp C                      &kp V                   &kp B                  &kp PRINTSCREEN  &tog 4            &kp N                  &kp M                        &kp COMMA                  &kp DOT                    &hold_preferred RIGHT_SHIFT FSLH  &none
+&none  &mo 4                  &mkp LCLK             &mkp RCLK                  &kp ESCAPE              &thum_cruster 1 LANG2  &lt 5 SPACE      &mt RSHIFT ENTER  &thum_cruster 2 LANG1  &none                        &none                      &none                      &mo 4                             &none
             >;
 
             label = "base";
