@@ -10,10 +10,10 @@
     excluded-positions = <
         // 10 // A
         // 13 // F
-        // 15 // H
-        // 16 // J
-        // 17 // K
-        // 18 // L
+        15 // H
+        16 // J
+        17 // K
+        18 // L
         // 19 // -
         // 32 // Z
         // 43 // /
@@ -23,7 +23,7 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>, <&zip_temp_layer 4 10000>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>, <&zip_temp_layer 4 2000>;
 
 	scroller {
 	    layers = <5>;
@@ -32,7 +32,7 @@
     };
 };
 &mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 10000>;
+    input-processors = <&zip_temp_layer 4 2000>;
 };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
