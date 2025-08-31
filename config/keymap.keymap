@@ -78,7 +78,7 @@
 &none  &kp Q                  &kp W                 &kp E                      &kp R                   &kp T                                                     &kp Y                  &kp U                        &kp I                      &kp O                      &kp P                             &none
 &none  &home_row_mod LCTRL A  &home_row_mod LGUI S  &home_row_mod RIGHT_ALT D  &home_row_mod LSHIFT F  &kp G                  &none            &none             &kp H                  &home_row_mod RIGHT_SHIFT J  &home_row_mod RIGHT_ALT K  &home_row_mod RIGHT_GUI L  &hold_preferred LCTRL MINUS       &none
 &none  &mt LEFT_SHIFT Z       &kp X                 &kp C                      &kp V                   &kp B                  &kp PRINTSCREEN  &tog 4            &kp N                  &kp M                        &kp COMMA                  &kp DOT                    &hold_preferred RIGHT_SHIFT FSLH  &none
-&none  &mo 4                  &mkp LCLK             &mkp RCLK                  &kp ESCAPE              &thum_cruster 1 LANG2  &lt 5 SPACE      &mt RSHIFT ENTER  &thum_cruster 2 LANG1  &none                        &none                      &none                      &mo 4                             &none
+&none  &mo 4                  &mkp LCLK             &mkp RCLK                  &kp ESCAPE              &thum_cruster 1 LANG2  &lt 5 SPACE      &mt RSHIFT ENTER  &thum_cruster 2 LANG1  &none                        &none                      &mo 6                      &mo 4                             &none
             >;
 
             label = "base";
@@ -131,6 +131,16 @@
 &trans  &trans  &trans  &trans  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        bluetooth {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
