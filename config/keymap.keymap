@@ -10,17 +10,11 @@
     require-prior-idle-ms = <200>;
 
     excluded-positions = <
-        // 10 // A
-        // 13 // F
-        15 // H
-        16 // J
-        17 // K
-        18 // L
-        // 19 // -
-        // 32 // Z
-        // 43 // /
-        // 36 // left thumbs
-        // 39 // right thumbs
+        25 26 27 28     // A S D F
+        32 33 34 35 36  // H J K L -
+        39              // Z(Shift)
+        50              // /
+        57              // left thumbs
     >;
 };
 
