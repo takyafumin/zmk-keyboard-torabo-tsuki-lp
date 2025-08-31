@@ -8,17 +8,17 @@
 // Disable trackball on these keys
 &zip_temp_layer {
     excluded-positions = <
-        27 // A
-        30 // F
-        34 // H
-        35 // J
-        36 // K
-        37 // L
-        38 // -
-        41 // Z
-        52 // /
-        59 // left thumbs
-        62 // right thumbs
+        10 // A
+        13 // F
+        15 // H
+        16 // J
+        17 // K
+        18 // L
+        19 // -
+        32 // Z
+        43 // /
+        36 // left thumbs
+        39 // right thumbs
     >;
 };
 
