@@ -3,6 +3,25 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
+
+// Disable trackball on these keys
+&zip_temp_layer {
+    excluded-positions = <
+        27 // A
+        30 // F
+        34 // H
+        35 // J
+        36 // K
+        37 // L
+        38 // -
+        41 // Z
+        52 // /
+        59 // left thumbs
+        62 // right thumbs
+    >;
+};
+
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
