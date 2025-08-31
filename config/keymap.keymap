@@ -102,18 +102,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
-    &trans  &lt 5 SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
-            >;
-        };
-        scroll {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp WUP  &trans     &trans     &mkp WDOWN  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
             >;
-            label = "scroll";
         };
     };
 };
