@@ -17,6 +17,40 @@
         };
     };
 
+    behaviors {
+        hold_preferred: hold_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_PREFERRED";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            hold-trigger-key-positions = <36 57 60 50>;
+        };
+
+        base: base {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BASE";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
+        };
+
+        home_row_mod: home_row_mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MOD";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            require-prior-idle-ms = <125>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
