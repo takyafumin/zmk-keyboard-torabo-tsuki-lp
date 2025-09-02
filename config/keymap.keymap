@@ -87,21 +87,21 @@
 
         marks {
             bindings = <
-&trans  &trans          &trans              &trans                     &trans                &trans                                              &trans             &trans            &trans         &trans                &trans                   &trans
-&trans  &kp EXCL        &kp AT              &kp HASH                   &kp DOLLAR            &kp PERCENT                                         &kp CARET          &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans
-&trans  &mt LCTRL TAB   &mt LEFT_GUI GRAVE  &mt RALT NON_US_BACKSLASH  &mt LEFT_SHIFT COLON  &kp SEMI          &trans  &trans                    &kp LEFT           &kp DOWN          &kp UP_ARROW   &kp RIGHT             &mt RCTRL EQUAL          &trans
-&trans  &kp LEFT_SHIFT  &kp TILDE           &kp PIPE                   &trans                &kp LEFT_BRACKET  &trans  &trans                    &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &mt LEFT_SHIFT QUESTION  &trans
-&trans  &kp LEFT_SHIFT  &trans              &trans                     &trans                &kp N0            &trans  &mt LEFT_SHIFT BACKSPACE  &lt 3 TAB          &trans            &trans         &trans                &mt LEFT_SHIFT DELETE    &trans
+&trans  &trans                     &trans                    &trans                           &trans                      &trans                                                          &trans             &trans            &trans         &trans                &trans                               &trans
+&trans  &kp EXCL                   &kp AT                    &kp HASH                         &kp DOLLAR                  &kp PERCENT                                                     &kp CARET          &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                &trans
+&trans  &hold_preferred LCTRL TAB  &hrm_left LEFT_GUI GRAVE  &hrm_left RALT NON_US_BACKSLASH  &hrm_left LEFT_SHIFT COLON  &kp SEMI          &trans  &trans                                &kp LEFT           &kp DOWN          &kp UP_ARROW   &kp RIGHT             &hold_preferred RCTRL EQUAL          &trans
+&trans  &kp LEFT_SHIFT             &kp TILDE                 &kp PIPE                         &kp SEMICOLON               &kp LEFT_BRACKET  &trans  &trans                                &kp RIGHT_BRACKET  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &hold_preferred LEFT_SHIFT QUESTION  &trans
+&trans  &kp LEFT_SHIFT             &trans                    &trans                           &trans                      &trans            &trans  &hold_preferred LEFT_SHIFT BACKSPACE  &lt 3 TAB          &trans            &trans         &trans                &hold_preferred LEFT_SHIFT DELETE    &trans
             >;
         };
 
         nums {
             bindings = <
-&trans  &trans          &trans        &trans                      &trans                        &trans                    &trans        &trans        &trans        &trans        &trans  &trans
-&trans  &kp NUMBER_1    &kp NUMBER_2  &kp N3                      &kp N4                        &kp N5                    &kp N6        &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&trans  &kp LCTRL       &kp LEFT_GUI  &mt RIGHT_ALT LEFT_BRACKET  &mt LEFT_SHIFT RIGHT_BRACKET  &trans    &trans  &trans  &kp KP_COMMA  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans  &kp LEFT_SHIFT  &trans        &kp LEFT_BRACE              &kp RIGHT_BRACE               &trans    &trans  &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans  &trans          &trans        &trans                      &trans                        &lt 3 N0  &trans  &trans  &kp TAB       &kp DEL       &trans        &trans        &trans  &trans
+&trans  &trans          &trans        &trans                            &trans                              &trans                    &trans        &trans                          &trans                         &trans                        &trans  &trans
+&trans  &kp NUMBER_1    &kp NUMBER_2  &kp N3                            &kp N4                              &kp N5                    &kp N6        &kp N7                          &kp N8                         &kp N9                        &kp N0  &trans
+&trans  &kp LCTRL       &kp LEFT_GUI  &hrm_left RIGHT_ALT LEFT_BRACKET  &hrm_left LEFT_SHIFT RIGHT_BRACKET  &trans    &trans  &trans  &kp KP_COMMA  &hrm_right LEFT_SHIFT NUMBER_4  &hrm_right RIGHT_ALT NUMBER_5  &hrm_right LEFT_GUI NUMBER_6  &trans  &trans
+&trans  &kp LEFT_SHIFT  &trans        &kp LEFT_BRACE                    &kp RIGHT_BRACE                     &trans    &trans  &trans  &kp PERIOD    &kp NUMBER_1                    &kp NUMBER_2                   &kp NUMBER_3                  &trans  &trans
+&trans  &trans          &trans        &trans                            &trans                              &lt 3 N0  &trans  &trans  &trans        &trans                          &trans                         &trans                        &trans  &trans
             >;
         };
 
