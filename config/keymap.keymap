@@ -10,13 +10,12 @@
     combos {
         compatible = "zmk,combos";
 
-        print-screen {
+        left-click {
             bindings = <&mkp LCLK>;
             key-positions = <33 34>;
-            layers = <2>;
         };
 
-        left-click {
+        right-click {
             bindings = <&mkp RCLK>;
             key-positions = <34 35>;
         };
@@ -49,6 +48,11 @@
         shift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <47 48>;
+        };
+
+        left-click-2 {
+            bindings = <&mkp MB1>;
+            key-positions = <28 27>;
         };
     };
 
