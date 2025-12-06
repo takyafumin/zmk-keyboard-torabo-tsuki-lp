@@ -12,32 +12,32 @@
 
         right-alt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <33 34>;
+            key-positions = <47 48>;
         };
 
         right-command {
             bindings = <&sk RIGHT_WIN>;
-            key-positions = <34 35>;
+            key-positions = <48 49>;
         };
 
-        right-control {
-            bindings = <&sk RIGHT_CONTROL>;
-            key-positions = <36 35>;
+        right-shift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <49 50>;
         };
 
         left-alt {
             bindings = <&sk RIGHT_ALT>;
-            key-positions = <28 27>;
+            key-positions = <42 41>;
         };
 
         left-command {
             bindings = <&sk LEFT_COMMAND>;
-            key-positions = <27 26>;
+            key-positions = <41 40>;
         };
 
-        left-control {
-            bindings = <&sk RIGHT_ALT>;
-            key-positions = <26 25>;
+        left-shift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <39 40>;
         };
 
         print-screen {
@@ -50,19 +50,14 @@
             key-positions = <32 33>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <28 29>;
         };
 
         ctrl-win-right {
             bindings = <&kp LG(LEFT_CONTROL)>;
             key-positions = <36 35 34>;
-        };
-
-        ctrl-win-left {
-            bindings = <&kp LG(LEFT_CONTROL)>;
-            key-positions = <27 25 26>;
         };
     };
 
@@ -124,11 +119,11 @@
 
         base {
             bindings = <
-&none  &none                         &none                          &none                       &none                          &none                                                                                         &none                         &none  &none                           &none                                &none                            &none
-&none  &balanced LC(LEFT_COMMAND) Q  &kp W                          &kp E                       &kp R                          &kp T                                                                                         &kp Y                         &kp U  &kp I                           &kp O                                &balanced LA(LEFT_COMMAND) P     &none
-&none  &kp A                         &kp S                          &kp D                       &kp F                          &kp G                         &none                             &none                         &kp H                         &kp J  &kp K                           &kp L                                &kp MINUS                        &none
-&none  &tap_preferred LEFT_SHIFT Z   &tap_preferred LEFT_COMMAND X  &tap_preferred RIGHT_ALT C  &layer_tap_preferred 4 V       &kp B                         &mkp LCLK                         &mkp RCLK                     &kp N                         &kp M  &tap_preferred RIGHT_ALT COMMA  &tap_preferred RIGHT_COMMAND PERIOD  &tap_preferred RIGHT_SHIFT FSLH  &none
-&none  &mo 4                         &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 5 ESCAPE  &layer_hold_priority 1 LANG2  &hold_preferred LEFT_SHIFT SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none  &none                           &mo 6                                &mo 4                            &none
+&none  &none                         &none                          &none                       &none                          &none                                                                                         &none                         &none  &none                           &none                                &none                         &none
+&none  &balanced LC(LEFT_COMMAND) Q  &kp W                          &kp E                       &kp R                          &kp T                                                                                         &kp Y                         &kp U  &kp I                           &kp O                                &balanced LA(LEFT_COMMAND) P  &none
+&none  &kp A                         &kp S                          &kp D                       &kp F                          &kp G                         &none                             &none                         &kp H                         &kp J  &kp K                           &kp L                                &kp MINUS                     &none
+&none  &tap_preferred LCTRL Z        &tap_preferred LEFT_COMMAND X  &tap_preferred RIGHT_ALT C  &kp V                          &kp B                         &kp LC(LG(LEFT))                  &kp LC(LG(RIGHT))             &kp N                         &kp M  &tap_preferred RIGHT_ALT COMMA  &tap_preferred RIGHT_COMMAND PERIOD  &tap_preferred RCTRL FSLH     &none
+&none  &mo 4                         &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 5 ESCAPE  &layer_hold_priority 1 LANG2  &hold_preferred LEFT_SHIFT SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none  &none                           &mo 6                                &mo 4                         &none
             >;
 
             label = "base";
@@ -138,8 +133,8 @@
             bindings = <
 &trans  &trans               &trans     &trans            &trans             &trans                                                       &trans                      &trans            &trans         &trans                &trans                               &trans
 &trans  &kp EXCL             &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT                                                  &kp CARET                   &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                &trans
-&trans  &balanced LCTRL TAB  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &trans  &trans                                &kp LEFT                    &kp DOWN          &kp UP_ARROW   &kp RIGHT             &hold_preferred RCTRL UNDERSCORE     &trans
-&trans  &sk LEFT_SHIFT       &kp TILDE  &trans            &kp BACKSLASH      &kp COLON      &trans  &trans                                &kp EQUAL                   &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &hold_preferred LEFT_SHIFT QUESTION  &trans
+&trans  &balanced LCTRL TAB  &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &trans  &trans                                &kp LEFT                    &kp DOWN          &kp UP_ARROW   &kp RIGHT             &hold_preferred RCTRL UNDERSCORE     &trans
+&trans  &sk LEFT_SHIFT       &kp TILDE  &trans            &kp GRAVE          &kp BACKSLASH  &trans  &trans                                &kp EQUAL                   &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &hold_preferred LEFT_SHIFT QUESTION  &trans
 &trans  &trans               &trans     &trans            &trans             &trans         &trans  &hold_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans            &trans         &trans                &kp DELETE                           &trans
             >;
         };
@@ -148,8 +143,8 @@
             bindings = <
 &trans  &trans          &trans        &trans            &trans             &trans                                     &trans     &trans        &trans        &trans        &trans  &trans
 &trans  &kp NUMBER_1    &kp NUMBER_2  &kp N3            &kp N4             &kp N5                                     &kp N6     &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&trans  &kp LCTRL       &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK               &trans  &trans  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans  &sk LEFT_SHIFT  &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH                  &trans  &trans  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
+&trans  &kp LCTRL       &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK               &trans  &trans  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&trans  &sk LEFT_SHIFT  &kp TILDE     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH                  &trans  &trans  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
 &trans  &trans          &trans        &trans            &trans             &layer_hold_priority 3 N0  &trans  &trans  &trans     &trans        &trans        &trans        &trans  &trans
             >;
         };
@@ -168,7 +163,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &trans  &trans
+&trans  &trans  &trans  &mo 5   &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &mo 5   &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
             >;
