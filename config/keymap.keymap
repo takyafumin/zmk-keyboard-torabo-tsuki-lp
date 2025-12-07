@@ -10,34 +10,44 @@
     combos {
         compatible = "zmk,combos";
 
-        right-alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <47 48>;
-        };
-
-        right-command {
-            bindings = <&sk RIGHT_WIN>;
-            key-positions = <48 49>;
-        };
-
-        right-shift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <49 50>;
-        };
-
-        left-alt {
-            bindings = <&sk RIGHT_ALT>;
-            key-positions = <42 41>;
+        left-control {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <25 39>;
         };
 
         left-command {
             bindings = <&sk LEFT_COMMAND>;
-            key-positions = <41 40>;
+            key-positions = <26 40>;
+        };
+
+        left-alt {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <41 27>;
         };
 
         left-shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <39 40>;
+            key-positions = <28 42>;
+        };
+
+        right-control {
+            bindings = <&sk RIGHT_CONTROL>;
+            key-positions = <36 50>;
+        };
+
+        right-command {
+            bindings = <&sk RIGHT_COMMAND>;
+            key-positions = <35 49>;
+        };
+
+        right-alt {
+            bindings = <&sk RIGHT_ALT>;
+            key-positions = <34 48>;
+        };
+
+        right-shift {
+            bindings = <&sk RIGHT_SHIFT>;
+            key-positions = <33 47>;
         };
 
         print-screen {
@@ -45,19 +55,29 @@
             key-positions = <22 21>;
         };
 
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 25>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
+
+        layer-arrow {
+            bindings = <&mo 7>;
+            key-positions = <29 28>;
+        };
+
         backspace {
-            bindings = <&sk BACKSPACE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <32 33>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <28 29>;
-        };
-
-        ctrl-win-right {
-            bindings = <&kp LG(LEFT_CONTROL)>;
-            key-positions = <36 35 34>;
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <33 34>;
         };
     };
 
