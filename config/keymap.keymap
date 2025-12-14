@@ -99,11 +99,11 @@
 
         marks {
             bindings = <
-&trans  &trans               &trans     &trans            &trans             &trans                                                       &trans                      &trans            &trans         &trans                &trans                               &trans
-&trans  &kp EXCL             &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT                                                  &kp CARET                   &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                &trans
-&trans  &balanced LCTRL TAB  &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &trans  &trans                                &kp LEFT                    &kp DOWN          &kp UP_ARROW   &kp RIGHT             &hold_preferred RCTRL UNDERSCORE     &trans
-&trans  &sk LEFT_SHIFT       &kp TILDE  &trans            &kp GRAVE          &kp BACKSLASH  &trans  &trans                                &kp EQUAL                   &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &hold_preferred LEFT_SHIFT QUESTION  &trans
-&trans  &trans               &trans     &trans            &trans             &trans         &trans  &hold_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans            &trans         &trans                &kp DELETE                           &trans
+&trans  &trans                    &trans     &trans            &trans             &trans                                                       &trans                      &trans            &trans         &trans                &trans                               &trans
+&trans  &kp EXCL                  &kp AT     &kp HASH          &kp DOLLAR         &kp PERCENT                                                  &kp CARET                   &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                &trans
+&trans  &tap_preferred LCTRL TAB  &kp COLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &trans  &trans                                &kp LEFT                    &kp DOWN          &kp UP_ARROW   &kp RIGHT             &hold_preferred RCTRL UNDERSCORE     &trans
+&trans  &sk LEFT_SHIFT            &kp TILDE  &trans            &kp GRAVE          &kp BACKSLASH  &trans  &trans                                &kp EQUAL                   &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &hold_preferred LEFT_SHIFT QUESTION  &trans
+&trans  &trans                    &trans     &trans            &trans             &trans         &trans  &hold_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans            &trans         &trans                &kp DELETE                           &trans
             >;
         };
 
