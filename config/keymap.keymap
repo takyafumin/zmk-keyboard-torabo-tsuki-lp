@@ -29,6 +29,11 @@
             bindings = <&mo 5>;
             key-positions = <33 34>;
         };
+
+        mouse-layer {
+            bindings = <&mo 5>;
+            key-positions = <28 16>;
+        };
     };
 
     behaviors {
@@ -81,11 +86,11 @@
 
         base {
             bindings = <
-&none  &none                        &none                          &none                       &none                          &none                                                                                         &none                         &none                         &none                       &none                           &none                               &none
-&none  &kp Q                        &kp W                          &kp E                       &kp R                          &kp T                                                                                         &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                               &none
-&none  &tap_preferred LCTRL A       &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                         &none                             &none                         &kp H                         &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z  &kp X                          &kp C                       &kp V                          &kp B                         &mkp LCLK                         &mkp RCLK                     &kp N                         &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT FSLH      &none
-&none  &mo 4                        &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 5 ESCAPE  &layer_hold_priority 1 LANG2  &hold_preferred LEFT_SHIFT SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                               &none
+&none  &none                        &none                          &none                       &none                          &none                                                                  &none                         &none                         &none                       &none                           &none                               &none
+&none  &kp Q                        &kp W                          &kp E                       &kp R                          &kp T                                                                  &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                               &none
+&none  &tap_preferred LCTRL A       &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                         &none      &none                         &kp H                         &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
+&none  &tap_preferred LEFT_SHIFT Z  &kp X                          &kp C                       &kp V                          &kp B                         &mkp LCLK  &tog 5                        &kp N                         &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT FSLH      &none
+&none  &mo 4                        &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 2 ESCAPE  &layer_hold_priority 1 LANG2  &kp SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                               &none
             >;
 
             label = "base";
@@ -93,21 +98,21 @@
 
         marks {
             bindings = <
-&trans  &trans                    &trans                                 &trans                          &trans                           &trans                                                      &trans                      &trans            &trans         &trans                &trans                              &trans
-&trans  &kp EXCL                  &kp AT                                 &kp HASH                        &kp DOLLAR                       &kp PERCENT                                                 &kp CARET                   &kp AMPERSAND     &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS               &trans
-&trans  &tap_preferred LCTRL TAB  &tap_preferred LEFT_COMMAND BACKSLASH  &tap_preferred RIGHT_ALT GRAVE  &tap_preferred LEFT_SHIFT COLON  &kp BACKSLASH  &trans  &trans                               &kp LEFT                    &kp DOWN          &kp UP_ARROW   &kp RIGHT             &tap_preferred RCTRL UNDERSCORE     &trans
-&trans  &sk LEFT_SHIFT            &kp PIPE                               &kp TILDE                       &kp SEMICOLON                    &kp PIPE       &trans  &trans                               &kp EQUAL                   &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN      &tap_preferred LEFT_SHIFT QUESTION  &trans
-&trans  &trans                    &trans                                 &trans                          &trans                           &trans         &trans  &tap_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans            &trans         &trans                &kp DELETE                          &trans
+&trans  &trans                    &trans                                 &trans                          &trans                           &trans                                                      &trans                      &trans                           &trans                             &trans                              &trans                              &trans
+&trans  &kp EXCL                  &kp AT                                 &kp HASH                        &kp DOLLAR                       &kp PERCENT                                                 &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS               &trans
+&trans  &tap_preferred LCTRL TAB  &tap_preferred LEFT_COMMAND BACKSLASH  &tap_preferred RIGHT_ALT GRAVE  &tap_preferred LEFT_SHIFT COLON  &kp BACKSLASH  &trans  &trans                               &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL UNDERSCORE     &trans
+&trans  &sk LEFT_SHIFT            &kp PIPE                               &kp TILDE                       &kp SEMICOLON                    &kp PIPE       &trans  &trans                               &kp EQUAL                   &kp SINGLE_QUOTE                 &kp LESS_THAN                      &kp GREATER_THAN                    &tap_preferred LEFT_SHIFT QUESTION  &trans
+&trans  &trans                    &trans                                 &trans                          &trans                           &trans         &trans  &tap_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                          &trans
             >;
         };
 
         nums {
             bindings = <
-&trans  &trans          &trans        &trans            &trans             &trans                                     &trans     &trans        &trans        &trans        &trans  &trans
-&trans  &kp NUMBER_1    &kp NUMBER_2  &kp N3            &kp N4             &kp N5                                     &kp N6     &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&trans  &kp LCTRL       &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK               &trans  &trans  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans  &sk LEFT_SHIFT  &none         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH                  &trans  &trans  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0  &trans
-&trans  &trans          &trans        &trans            &trans             &layer_hold_priority 3 N0  &trans  &trans  &trans     &trans        &trans        &trans        &trans  &trans
+&trans  &trans          &trans        &trans            &trans             &trans                                     &trans     &trans        &trans        &trans        &trans                   &trans
+&trans  &kp NUMBER_1    &kp NUMBER_2  &kp N3            &kp N4             &kp N5                                     &kp N6     &kp N7        &kp N8        &kp N9        &kp N0                   &trans
+&trans  &kp LCTRL       &kp GRAVE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK               &trans  &trans  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &tap_preferred LCTRL N0  &trans
+&trans  &sk LEFT_SHIFT  &kp TILDE     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SLASH                  &trans  &trans  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0                   &trans
+&trans  &trans          &trans        &trans            &trans             &layer_hold_priority 3 N0  &trans  &trans  &kp N0     &trans        &trans        &trans        &trans                   &trans
             >;
         };
 
