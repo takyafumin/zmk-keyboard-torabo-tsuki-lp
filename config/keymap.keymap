@@ -29,12 +29,7 @@
 
         scroll-layer {
             bindings = <&mo 5>;
-            key-positions = <33 34>;
-        };
-
-        mouse-layer {
-            bindings = <&mo 4>;
-            key-positions = <28 27>;
+            key-positions = <33 47>;
         };
     };
 
@@ -88,11 +83,11 @@
 
         base {
             bindings = <
-&none  &none                        &none                          &none                       &none                          &none                                                                  &none                         &none                         &none                       &none                           &none                               &none
-&none  &kp Q                        &kp W                          &kp E                       &kp R                          &kp T                                                                  &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                               &none
-&none  &tap_preferred LCTRL A       &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                         &none      &none                         &kp H                         &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z  &kp X                          &kp C                       &kp V                          &kp B                         &mkp LCLK  &tog 4                        &kp N                         &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT FSLH      &none
-&none  &mo 4                        &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 2 ESCAPE  &layer_hold_priority 1 LANG2  &kp SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                               &none
+&none  &none                   &none                          &none                       &none                          &none                                                                  &none                         &none                         &none                       &none                           &none                               &none
+&none  &kp Q                   &kp W                          &kp E                       &kp R                          &kp T                                                                  &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                               &none
+&none  &tap_preferred LCTRL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                         &none      &none                         &kp H                         &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
+&none  &lt 4 Z                 &kp X                          &kp C                       &kp V                          &kp B                         &mkp LCLK  &tog 4                        &kp N                         &kp M                         &kp COMMA                   &kp PERIOD                      &lt 5 FSLH                          &none
+&none  &mo 4                   &mo 6                          &mo 4                       &layer_hold_priority 2 ESCAPE  &layer_hold_priority 1 LANG2  &kp SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                               &none
             >;
 
             label = "base";
@@ -155,16 +150,6 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        allow {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans    &trans        &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans    &trans        &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT          &kp DOWN  &kp UP_ARROW  &kp RIGHT          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LG(LEFT))  &trans    &trans        &kp LC(LG(RIGHT))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mo 3   &trans  &trans  &mo 3             &trans    &trans        &trans             &trans  &trans
             >;
         };
     };
