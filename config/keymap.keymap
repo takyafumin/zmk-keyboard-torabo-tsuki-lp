@@ -5,6 +5,8 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
+&msc { acceleration-exponent = <2>; };
+
 / {
     combos {
         compatible = "zmk,combos";
