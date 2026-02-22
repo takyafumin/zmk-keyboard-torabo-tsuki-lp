@@ -34,7 +34,7 @@
 
         mouse-layer {
             bindings = <&mo 6>;
-            key-positions = <15 27>;
+            key-positions = <28 42>;
         };
 
         sticky-lshift {
