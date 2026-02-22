@@ -12,7 +12,7 @@
         compatible = "zmk,combos";
 
         print-screen {
-            bindings = <&kp PRINTSCREEN>;
+            bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <22 21>;
             require-prior-idle-ms = <150>;
         };
@@ -29,7 +29,12 @@
 
         scroll-layer {
             bindings = <&mo 5>;
-            key-positions = <33 47>;
+            key-positions = <28 16>;
+        };
+
+        mouse-layer {
+            bindings = <&mo 6>;
+            key-positions = <15 27>;
         };
     };
 
