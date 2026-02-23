@@ -27,16 +27,6 @@
             key-positions = <32 33>;
         };
 
-        scroll-layer {
-            bindings = <&mo 5>;
-            key-positions = <28 16>;
-        };
-
-        mouse-layer {
-            bindings = <&mo 6>;
-            key-positions = <28 42>;
-        };
-
         sticky-lshift {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <25 39>;
@@ -117,9 +107,9 @@
             bindings = <
 &none  &none                        &none                          &none                       &none                          &none                                                                                     &none                         &none                         &none                       &none                           &none                               &none
 &none  &kp Q                        &kp W                          &kp E                       &kp R                          &kp T                                                                                     &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                               &none
-&none  &tap_preferred LCTRL A       &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &layer_tap_preferred 6 G      &none                         &none                         &kp H                         &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z  &kp X                          &kp C                       &layer_tap_preferred 8 V       &kp B                         &mo 3                         &tog 6                        &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT FSLH      &none
-&none  &mo 6                        &mo 7                          &mo 6                       &layer_hold_priority 6 ESCAPE  &layer_hold_priority 1 LANG2  &layer_tap_preferred 6 SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 7                           &mo 6                               &none
+&none  &tap_preferred LCTRL A       &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &layer_tap_preferred 8 G      &none                         &none                         &layer_tap_preferred 8 H      &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
+&none  &tap_preferred LEFT_SHIFT Z  &kp X                          &kp C                       &layer_tap_preferred 6 V       &kp B                         &mo 3                         &tog 3                        &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT FSLH      &none
+&none  &mo 6                        &mo 7                          &mo 6                       &layer_hold_priority 6 ESCAPE  &layer_hold_priority 1 LANG2  &layer_tap_preferred 5 SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 7                           &mo 6                               &none
             >;
 
             label = "base";
@@ -147,11 +137,11 @@
 
         numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans        &trans  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                     &trans  &kp N7        &kp N8  &kp N9  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp NUMBER_4  &kp N5  &kp N6  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N1        &kp N2  &kp N3  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp N0  &trans        &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans     &trans                            &trans     &trans        &trans  &trans  &trans        &trans
+&trans  &trans  &trans  &trans  &trans     &trans                            &trans     &kp N7        &kp N8  &kp N9  &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &kp COLON  &kp PERIOD  &trans     &trans     &kp EQUAL  &kp NUMBER_4  &kp N5  &kp N6  &kp MINUS     &trans
+&trans  &trans  &trans  &trans  &trans     &kp COMMA   &trans     &trans     &kp PLUS   &kp N1        &kp N2  &kp N3  &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans     &trans      &kp SPACE  &kp ENTER  &kp N0     &trans        &trans  &trans  &trans        &trans
             >;
         };
 
