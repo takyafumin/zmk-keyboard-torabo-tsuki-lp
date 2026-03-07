@@ -11,16 +11,17 @@
         27 // D (tap:D / hold:Alt)
         28 // F (tap:F / hold:Shift)
         37 // Z (tap:Z / hold:Shift)
-        // 右手その他モディファイアキー  
+        // 右手モディファイア・マウスクリックキー
+        33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
+        34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
+        35 // L (base:L/Cmd / mouse:MB5) ※AML中クリック可能
         36 // - (tap:- / hold:Ctrl) 右手小指
         47 // / (tap:/ / hold:Shift) 右手薬指下段
         55 // Enter (tap:Enter / hold:Shift) 右手親指
-        // マウス関連キー
+        // その他マウス関連キー
         32 // MB4 (マウスボタン4)
         53 // mo 5 (スクロールレイヤーアクセス1)
         56 // mo 5 (スクロールレイヤーアクセス2)
-        // 注意: 右手ホームロー J(33), K(34), L(35) は除外
-        // AML中はマウスクリック(LCLK/RCLK/MB5)として機能する
     >;
     require-prior-idle-ms = <200>; // キー入力中の誤爆防止（200ms）
 };
