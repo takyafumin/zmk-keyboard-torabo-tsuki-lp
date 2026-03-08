@@ -107,6 +107,17 @@
             require-prior-idle-ms = <180>;
             flavor = "tap-preferred";
         };
+
+        mod_tap_mkp: mod_tap_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_MKP";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <180>;
+        };
     };
 
     keymap {
@@ -156,11 +167,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MB5  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mod_tap_mkp LEFT_WIN MB5  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
             >;
         };
 
