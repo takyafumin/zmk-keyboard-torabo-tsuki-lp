@@ -9,6 +9,7 @@
 &msc { acceleration-exponent = <2>; };
 
 // マウスキーを押した後、200mでbase layerに戻る(ダブルクリック猶予)
+
 &mkp_input_listener {
     input-processors = <
         &zip_temp_layer 4 200
@@ -36,13 +37,13 @@
         };
 
         sticky-rshift {
-            bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <33 47>;
+            bindings = <&mo 5>;
+            key-positions = <28 42>;
         };
 
         sticky-rshift2 {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <36 50>;
+            bindings = <&mo 5>;
+            key-positions = <33 47>;
         };
 
         to-scroll {
