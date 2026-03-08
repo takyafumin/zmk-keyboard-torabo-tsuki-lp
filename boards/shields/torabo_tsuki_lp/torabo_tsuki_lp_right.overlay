@@ -11,13 +11,9 @@
          27 // D (tap:D / hold:Alt)
          28 // F (tap:F / hold:Shift)
          
-         // // 右手モディファイア・マウスクリックキー
-         // 33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
-         // 34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
-         
-         // その他マウス関連キー
-         // 57 // mo 5 (左親指スクロールレイヤーアクセス)
-         58 // mo 5 (左親指スクロールレイヤーアクセス)
+         // 右手モディファイア・マウスクリックキー
+         33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
+         34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
      >;
     require-prior-idle-ms = <200>; // キー入力中の誤爆防止（200ms）
 };
@@ -25,7 +21,7 @@
 &trackball_listener {
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_temp_layer 4 5000  // レイヤー4（mouse）を5秒間アクティブ
+        &zip_temp_layer 4 10000
     >;
 
 	scroller {

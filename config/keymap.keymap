@@ -8,9 +8,12 @@
 
 &msc { acceleration-exponent = <2>; };
 
-// マウスキーを押した時にタイムアウトを延長（1秒間）
-
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 1000>; };
+// マウスキーを押した後、200mでbase layerに戻る(ダブルクリック猶予)
+&mkp_input_listener {
+    input-processors = <
+        &zip_temp_layer 4 200
+    >;
+};
 
 / {
     combos {
