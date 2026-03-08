@@ -12,8 +12,10 @@
          28 // F (tap:F / hold:Shift)
          
          // 右手モディファイア・マウスクリックキー
+         32 // H マウスの戻る
          33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
          34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
+         35 // L マウスの進む
      >;
     require-prior-idle-ms = <200>; // キー入力中の誤爆防止（200ms）
 };
