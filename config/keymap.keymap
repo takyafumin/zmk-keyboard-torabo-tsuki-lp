@@ -27,7 +27,7 @@
         };
 
         escape {
-            bindings = <&kp ESCAPE>;
+            bindings = <&esc_en>;
             key-positions = <25 13>;
         };
 
@@ -37,18 +37,8 @@
         };
 
         sticky-rshift {
-            bindings = <&mo 5>;
+            bindings = <&mo 2>;
             key-positions = <28 42>;
-        };
-
-        sticky-rshift2 {
-            bindings = <&mo 5>;
-            key-positions = <33 47>;
-        };
-
-        to-scroll {
-            bindings = <&mo 5>;
-            key-positions = <25 39>;
         };
     };
 
@@ -120,16 +110,25 @@
         };
     };
 
+    macros {
+        esc_en: esc_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESC &kp LANG1>;
+            label = "ESC_EN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&none  &none                        &none                          &none                       &none                        &none                                                                                         &none                         &none                         &none                       &none                           &none                               &none
-&none  &kp Q                        &kp W                          &kp E                       &kp R                        &kp T                                                                                         &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                               &none
-&none  &tap_preferred LCTRL A       &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F  &layer_tap_preferred 8 G      &none                             &none                         &layer_tap_preferred 8 H      &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z  &kp X                          &kp C                       &layer_tap_preferred 8 V     &kp B                         &mo 7                             &sk LEFT_SHIFT                &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT FSLH      &none
-&none  &mo 4                        &mo 6                          &mo 5                       &kp ESCAPE                   &layer_hold_priority 1 LANG2  &hold_preferred LEFT_SHIFT SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                               &none
+&none  &none                                    &none                          &none                       &none                        &none                                                                                        &none                         &none                         &none                       &none                           &none                                       &none
+&none  &kp Q                                    &kp W                          &kp E                       &kp R                        &kp T                                                                                        &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                                       &none
+&none  &tap_preferred LCTRL A                   &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F  &layer_tap_preferred 8 G      &none                            &none                         &layer_tap_preferred 8 H      &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS          &none
+&none  &tap_preferred RA(LC(LG(LEFT_SHIFT))) Z  &kp X                          &kp C                       &layer_tap_preferred 8 V     &kp B                         &mo 7                            &sk LEFT_SHIFT                &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred RA(LC(LG(LEFT_SHIFT))) FSLH  &none
+&none  &mo 4                                    &mo 6                          &mo 5                       &lt 5 ESCAPE                 &layer_hold_priority 1 LANG2  &tap_preferred LEFT_SHIFT SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                                       &none
             >;
 
             label = "base";
@@ -137,11 +136,11 @@
 
         marks {
             bindings = <
-&trans  &trans                      &trans                                 &trans                          &trans                           &trans                                                      &trans                      &trans                           &trans                             &trans                              &trans                              &trans
-&trans  &kp EXCL                    &kp AT                                 &kp HASH                        &kp DOLLAR                       &kp PERCENT                                                 &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS               &trans
-&trans  &tap_preferred LCTRL TAB    &tap_preferred LEFT_COMMAND BACKSLASH  &tap_preferred RIGHT_ALT GRAVE  &tap_preferred LEFT_SHIFT COLON  &kp BACKSLASH  &trans  &trans                               &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL UNDERSCORE     &trans
-&trans  &sk LA(LC(LG(LEFT_SHIFT)))  &kp PIPE                               &kp TILDE                       &kp SEMICOLON                    &kp PIPE       &trans  &trans                               &kp EQUAL                   &kp SINGLE_QUOTE                 &kp LESS_THAN                      &kp GREATER_THAN                    &tap_preferred LEFT_SHIFT QUESTION  &trans
-&trans  &trans                      &trans                                 &trans                          &trans                           &trans         &trans  &tap_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                          &trans
+&trans  &trans                      &trans                                 &trans                          &trans                           &trans                                                      &trans                      &trans                           &trans                             &trans                              &trans                                          &trans
+&trans  &kp EXCL                    &kp AT                                 &kp HASH                        &kp DOLLAR                       &kp PERCENT                                                 &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS                           &trans
+&trans  &tap_preferred LCTRL TAB    &tap_preferred LEFT_COMMAND BACKSLASH  &tap_preferred RIGHT_ALT GRAVE  &tap_preferred LEFT_SHIFT COLON  &kp BACKSLASH  &trans  &trans                               &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL UNDERSCORE                 &trans
+&trans  &sk LA(LC(LG(LEFT_SHIFT)))  &kp PIPE                               &kp TILDE                       &kp SEMICOLON                    &kp PIPE       &trans  &trans                               &kp EQUAL                   &kp SINGLE_QUOTE                 &kp LESS_THAN                      &kp GREATER_THAN                    &tap_preferred RA(LC(LG(LEFT_SHIFT))) QUESTION  &trans
+&trans  &trans                      &trans                                 &trans                          &trans                           &trans         &trans  &tap_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                                      &trans
             >;
         };
 
