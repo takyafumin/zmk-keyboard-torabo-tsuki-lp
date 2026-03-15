@@ -37,13 +37,13 @@
         };
 
         en {
-            bindings = <&kp LANG1>;
+            bindings = <&kp LANG2>;
             key-positions = <28 42>;
         };
 
         jp {
-            bindings = <&kp LANG2>;
-            key-positions = <32 46>;
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <33 47>;
         };
 
         scroll {
