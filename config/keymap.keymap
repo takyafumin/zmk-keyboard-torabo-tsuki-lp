@@ -73,7 +73,7 @@
             tapping-term-ms = <180>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <180>;
         };
 
         layer_tap_preferred: layer_tap_preferred {
@@ -158,8 +158,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
-&trans  &trans  &trans  &trans  &mo 5   &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mod_tap_mkp LEFT_WIN MB5  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mo 5   &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mod_tap_mkp LEFT_WIN MB5  &trans  &trans
+&mo 5   &trans  &trans  &trans  &trans  &mo 5   &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
             >;
         };
