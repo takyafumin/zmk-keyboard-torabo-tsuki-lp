@@ -159,7 +159,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mod_tap_mkp LEFT_WIN MB5  &trans  &trans
-&mo 5   &trans  &trans  &trans  &trans  &mo 5   &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
+&trans  &mo 5   &trans  &trans  &trans  &mo 5   &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
             >;
         };
