@@ -37,7 +37,7 @@
         };
 
         sticky-rshift {
-            bindings = <&mo 2>;
+            bindings = <&mo 5>;
             key-positions = <28 42>;
         };
     };
@@ -64,17 +64,6 @@
             hold-while-undecided;
         };
 
-        balanced: balanced {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BALANCED";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-            quick-tap-ms = <180>;
-        };
-
         tap_preferred: tap_preferred {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_PREFERRED";
@@ -83,7 +72,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <180>;
+            require-prior-idle-ms = <125>;
         };
 
         layer_tap_preferred: layer_tap_preferred {
@@ -94,7 +83,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <0>;
-            require-prior-idle-ms = <180>;
+            require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
         };
 
@@ -106,7 +95,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             quick-tap-ms = <180>;
-            require-prior-idle-ms = <180>;
+            require-prior-idle-ms = <125>;
         };
     };
 
@@ -124,11 +113,11 @@
 
         base {
             bindings = <
-&none  &none                                    &none                          &none                       &none                        &none                                                                                        &none                         &none                         &none                       &none                           &none                                       &none
-&none  &kp Q                                    &kp W                          &kp E                       &kp R                        &kp T                                                                                        &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                                       &none
-&none  &tap_preferred LCTRL A                   &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F  &layer_tap_preferred 8 G      &none                            &none                         &layer_tap_preferred 8 H      &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS          &none
-&none  &tap_preferred RA(LC(LG(LEFT_SHIFT))) Z  &kp X                          &kp C                       &layer_tap_preferred 8 V     &kp B                         &mo 7                            &sk LEFT_SHIFT                &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred RA(LC(LG(LEFT_SHIFT))) FSLH  &none
-&none  &mo 4                                    &mo 6                          &mo 5                       &lt 5 ESCAPE                 &layer_hold_priority 1 LANG2  &tap_preferred LEFT_SHIFT SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                                       &none
+&none  &none                                    &none                          &none                       &none                        &none                                                                  &none                         &none                         &none                       &none                           &none                                       &none
+&none  &kp Q                                    &kp W                          &kp E                       &kp R                        &kp T                                                                  &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                                       &none
+&none  &tap_preferred LCTRL A                   &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F  &layer_tap_preferred 8 G      &none      &none                         &layer_tap_preferred 8 H      &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS          &none
+&none  &tap_preferred RA(LC(LG(LEFT_SHIFT))) Z  &kp X                          &kp C                       &layer_tap_preferred 8 V     &kp B                         &mo 7      &sk LEFT_SHIFT                &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred RA(LC(LG(LEFT_SHIFT))) FSLH  &none
+&none  &mo 4                                    &mo 6                          &mo 5                       &lt 5 ESCAPE                 &layer_hold_priority 1 LANG2  &kp SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                                       &none
             >;
 
             label = "base";
@@ -146,11 +135,11 @@
 
         nums {
             bindings = <
-&trans  &trans                    &trans        &trans                          &trans                           &trans                                     &trans    &trans                          &trans                             &trans                         &trans  &trans
-&trans  &kp NUMBER_1              &kp NUMBER_2  &kp N3                          &kp N4                           &kp N5                                     &kp N6    &kp N7                          &kp N8                             &kp N9                         &kp N0  &trans
-&trans  &tap_preferred LCTRL TAB  &trans        &tap_preferred RIGHT_ALT LANG1  &tap_preferred LEFT_SHIFT LANG2  &trans                     &trans  &trans  &kp LEFT  &tap_preferred LEFT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred LEFT_WIN RIGHT  &trans  &trans
-&trans  &kp ESCAPE                &trans        &trans                          &sk LEFT_SHIFT                   &trans                     &trans  &trans  &trans    &sk LEFT_SHIFT                  &trans                             &trans                         &trans  &trans
-&trans  &trans                    &trans        &trans                          &trans                           &layer_hold_priority 3 N0  &trans  &trans  &trans    &trans                          &trans                             &trans                         &trans  &trans
+&trans  &trans                    &trans        &trans                                 &trans                                   &trans                                     &trans  &trans                                  &trans                                  &trans  &trans      &trans
+&trans  &kp NUMBER_1              &kp NUMBER_2  &kp N3                                 &kp N4                                   &kp N5                                     &kp N6  &kp N7                                  &kp N8                                  &kp N9  &kp N0      &trans
+&trans  &tap_preferred LCTRL TAB  &trans        &tap_preferred RIGHT_ALT LEFT_BRACKET  &tap_preferred LEFT_SHIFT RIGHT_BRACKET  &trans                     &trans  &trans  &trans  &tap_preferred LEFT_SHIFT LEFT_BRACKET  &tap_preferred RIGHT_ALT RIGHT_BRACKET  &trans  &trans      &trans
+&trans  &kp ESCAPE                &trans        &kp LEFT_BRACE                         &kp RIGHT_BRACE                          &trans                     &trans  &trans  &trans  &kp LS(NUMBER_9)                        &kp LS(NUMBER_0)                        &trans  &sk LSHIFT  &trans
+&trans  &trans                    &trans        &trans                                 &trans                                   &layer_hold_priority 3 N0  &trans  &trans  &trans  &trans                                  &trans                                  &trans  &trans      &trans
             >;
         };
 
@@ -176,11 +165,11 @@
 
         MOUSE-scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans  &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans  &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans  &trans  &mkp MB5  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
