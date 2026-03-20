@@ -12,7 +12,7 @@
 
 &mkp_input_listener {
     input-processors = <
-        &zip_temp_layer 4 500
+        &zip_temp_layer 4 300
     >;
 };
 
@@ -24,11 +24,6 @@
             bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <22 36>;
             require-prior-idle-ms = <150>;
-        };
-
-        escape {
-            bindings = <&esc_en>;
-            key-positions = <25 13>;
         };
 
         backspace {
