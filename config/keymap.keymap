@@ -41,9 +41,9 @@
             key-positions = <33 47>;
         };
 
-        scroll {
-            bindings = <&mo 5>;
-            key-positions = <57 58>;
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <18 19>;
         };
     };
 
@@ -131,21 +131,21 @@
 
         marks {
             bindings = <
-&trans  &trans                                        &trans                             &trans                                 &trans                                   &trans                                                    &trans                      &trans                           &trans                             &trans                              &trans                                          &trans
-&trans  &kp EXCL                                      &kp AT                             &kp HASH                               &kp DOLLAR                               &kp PERCENT                                               &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS                           &trans
-&trans  &tap_preferred LCTRL TAB                      &tap_preferred LEFT_COMMAND GRAVE  &tap_preferred RIGHT_ALT LEFT_BRACKET  &tap_preferred LEFT_SHIFT RIGHT_BRACKET  &kp EQUAL    &trans  &trans                               &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL UNDERSCORE                 &trans
-&trans  &tap_preferred LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp TILDE                          &kp LEFT_BRACE                         &kp RIGHT_BRACE                          &kp PLUS     &trans  &trans                               &kp SINGLE_QUOTE            &kp SEMI                         &kp LESS_THAN                      &kp GREATER_THAN                    &tap_preferred RA(LC(LG(LEFT_SHIFT))) QUESTION  &trans
-&trans  &trans                                        &trans                             &trans                                 &trans                                   &trans       &trans  &tap_preferred LEFT_SHIFT BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                                      &trans
+&trans  &trans                                        &trans                             &trans                          &trans                           &trans                                     &trans                      &trans                           &trans                             &trans                              &trans                                          &trans
+&trans  &kp EXCL                                      &kp AT                             &kp HASH                        &kp DOLLAR                       &kp PERCENT                                &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS                           &trans
+&trans  &tap_preferred LCTRL TAB                      &tap_preferred LEFT_COMMAND GRAVE  &tap_preferred RIGHT_ALT EQUAL  &tap_preferred LEFT_SHIFT COLON  &kp SINGLE_QUOTE   &trans  &trans          &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL UNDERSCORE                 &trans
+&trans  &tap_preferred LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp TILDE                          &kp PLUS                        &kp SEMI                         &kp DOUBLE_QUOTES  &trans  &trans          &kp BACKSPACE               &kp ENTER                        &kp LESS_THAN                      &kp GREATER_THAN                    &tap_preferred RA(LC(LG(LEFT_SHIFT))) QUESTION  &trans
+&trans  &trans                                        &trans                             &trans                          &trans                           &trans             &trans  &sk LEFT_SHIFT  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                                      &trans
             >;
         };
 
         nums {
             bindings = <
-&trans  &trans                                        &trans                             &trans                                 &trans                                   &trans                                     &trans         &trans                                  &trans                                  &trans  &trans        &trans
-&trans  &kp NUMBER_1                                  &kp NUMBER_2                       &kp N3                                 &kp N4                                   &kp N5                                     &kp N6         &kp N7                                  &kp N8                                  &kp N9  &kp N0        &trans
-&trans  &tap_preferred LCTRL TAB                      &tap_preferred LEFT_COMMAND GRAVE  &tap_preferred RIGHT_ALT LEFT_BRACKET  &tap_preferred LEFT_SHIFT RIGHT_BRACKET  &kp EQUAL                  &trans  &trans  &kp BACKSLASH  &tap_preferred LEFT_SHIFT LEFT_BRACKET  &tap_preferred RIGHT_ALT RIGHT_BRACKET  &trans  &kp CAPSLOCK  &trans
-&trans  &tap_preferred RA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp TILDE                          &kp LEFT_BRACE                         &kp RIGHT_BRACE                          &kp PLUS                   &trans  &trans  &kp PIPE       &kp LS(NUMBER_9)                        &kp LS(NUMBER_0)                        &trans  &sk LSHIFT    &trans
-&trans  &trans                                        &trans                             &trans                                 &trans                                   &layer_hold_priority 3 N0  &trans  &trans  &trans         &trans                                  &trans                                  &trans  &trans        &trans
+&trans  &trans                                        &trans                             &trans                                 &trans                                   &trans                                     &trans             &trans                                  &trans                          &trans                             &trans        &trans
+&trans  &kp NUMBER_1                                  &kp NUMBER_2                       &kp N3                                 &kp N4                                   &kp N5                                     &kp N6             &kp N7                                  &kp N8                          &kp N9                             &kp N0        &trans
+&trans  &tap_preferred LCTRL TAB                      &tap_preferred LEFT_COMMAND GRAVE  &tap_preferred RIGHT_ALT LEFT_BRACKET  &tap_preferred LEFT_SHIFT RIGHT_BRACKET  &kp LEFT_BRACKET           &trans  &trans  &kp RIGHT_BRACKET  &tap_preferred LEFT_SHIFT SINGLE_QUOTE  &tap_preferred RIGHT_ALT EQUAL  &tap_preferred LEFT_WIN BACKSLASH  &kp CAPSLOCK  &trans
+&trans  &tap_preferred RA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp TILDE                          &kp LEFT_BRACE                         &kp RIGHT_BRACE                          &kp LEFT_BRACE             &trans  &trans  &kp RIGHT_BRACE    &kp DOUBLE_QUOTES                       &kp PLUS                        &kp PIPE                           &sk LSHIFT    &trans
+&trans  &trans                                        &trans                             &trans                                 &trans                                   &layer_hold_priority 3 N0  &trans  &trans  &trans             &trans                                  &trans                          &trans                             &trans        &trans
             >;
         };
 
@@ -164,7 +164,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp RCLK  &mod_tap_mkp LEFT_WIN MB5  &trans  &trans
-&trans  &mo 5   &trans  &trans  &trans  &mo 5   &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
+&trans  &mo 5   &trans  &trans  &mo 5   &mo 5   &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans                     &trans  &trans
             >;
         };
