@@ -20,6 +20,11 @@
     combos {
         compatible = "zmk,combos";
 
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
+
         print-screen {
             bindings = <&kp LG(LS(NUMBER_4))>;
             key-positions = <18 19>;
@@ -39,11 +44,6 @@
         jp {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <47 48>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
         };
     };
 
