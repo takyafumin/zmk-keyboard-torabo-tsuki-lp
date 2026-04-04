@@ -50,21 +50,6 @@
             bindings = <&kp TAB>;
             key-positions = <39 40>;
         };
-
-        StickShift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <50 49>;
-        };
-
-        WebBack {
-            bindings = <&mkp MB4>;
-            key-positions = <15 16>;
-        };
-
-        WebNext {
-            bindings = <&mkp MB5>;
-            key-positions = <20 19>;
-        };
     };
 
     behaviors {
@@ -174,17 +159,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &to 0   &to 0   &trans  &trans  &to 0   &trans     &trans     &trans  &trans  &trans
             >;
         };
 
         MOUSE-scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp DELETE     &trans     &trans     &trans  &kp BACKSPACE     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &mkp LCLK  &mkp RCLK  &trans  &sk LEFT_CONTROL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp ENTER  &trans     &trans  &sk LEFT_SHIFT    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &mkp MB4   &mkp MB5   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp ENTER  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans  &trans  &trans
             >;
         };
 
