@@ -180,11 +180,11 @@
 
         MOUSE-scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp ENTER  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp DELETE     &trans     &trans     &trans  &kp BACKSPACE     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &mkp LCLK  &mkp RCLK  &trans  &sk LEFT_CONTROL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp ENTER  &trans     &trans  &sk LEFT_SHIFT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans  &trans            &trans
             >;
         };
 
