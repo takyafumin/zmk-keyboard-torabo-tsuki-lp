@@ -52,17 +52,17 @@
         };
 
         del {
-            bindings = <&none>;
+            bindings = <&kp DELETE>;
             key-positions = <21 22>;
         };
 
         prev {
-            bindings = <&none>;
+            bindings = <&mkp MB4>;
             key-positions = <19 33>;
         };
 
         next {
-            bindings = <&none>;
+            bindings = <&mkp MB5>;
             key-positions = <20 34>;
         };
 
