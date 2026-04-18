@@ -104,15 +104,6 @@
         };
     };
 
-    macros {
-        esc_en: esc_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESC &kp LANG1>;
-            label = "ESC_EN";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -121,7 +112,7 @@
 &none  &none                                    &none                          &none                       &none                        &none                                                                  &none                         &none                         &none                       &none                           &none                                       &none
 &none  &kp Q                                    &kp W                          &kp E                       &kp R                        &kp T                                                                  &kp Y                         &kp U                         &kp I                       &kp O                           &kp P                                       &none
 &none  &tap_preferred LCTRL A                   &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F  &kp G                         &none      &none                         &kp H                         &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS          &none
-&none  &tap_preferred RA(LC(LG(LEFT_SHIFT))) Z  &kp X                          &kp C                       &layer_tap_preferred 5 V     &kp B                         &mo 7      &sk LEFT_SHIFT                &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred RA(LC(LG(LEFT_SHIFT))) FSLH  &none
+&none  &tap_preferred RA(LC(LG(LEFT_SHIFT))) Z  &kp X                          &kp C                       &layer_tap_preferred 5 V     &kp B                         &mo 7      &kp LG(LS(NUMBER_4))          &kp N                         &layer_tap_preferred 8 M      &kp COMMA                   &kp PERIOD                      &tap_preferred RA(LC(LG(LEFT_SHIFT))) FSLH  &none
 &none  &mo 4                                    &mo 6                          &kp LG(LS(NUMBER_4))        &lt 7 ESCAPE                 &layer_hold_priority 1 LANG2  &kp SPACE  &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                         &none                       &mo 6                           &mo 4                                       &none
             >;
 
