@@ -20,11 +20,6 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 25>;
-        };
-
         prev {
             bindings = <&mkp MB4>;
             key-positions = <19 33>;
@@ -43,6 +38,16 @@
         right-click {
             bindings = <&mkp RCLK>;
             key-positions = <15 27>;
+        };
+
+        en {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <19 20>;
+        };
+
+        jp {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <21 20 20 21>;
         };
     };
 
@@ -150,11 +155,11 @@
 
         MOUSE-scroll-arrow {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans          &trans    &trans        &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans          &trans    &trans        &trans     &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans        &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 3           &trans    &trans        &trans     &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans          &trans         &trans        &trans     &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp DELETE      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ESCAPE      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE   &kp ENTER      &kp CAPSLOCK  &trans     &sk LEFT_SHIFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 3           &trans         &trans        &trans     &trans          &trans
             >;
         };
 
