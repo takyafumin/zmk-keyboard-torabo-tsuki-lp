@@ -47,7 +47,7 @@
 
         jp {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <21 20 20 21>;
+            key-positions = <20 21>;
         };
     };
 
