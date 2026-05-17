@@ -96,6 +96,28 @@
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
         };
+
+        tap_dance_minus: tap_dance_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MINUS";
+            #binding-cells = <0>;
+            bindings =
+                <&hold_preferred LEFT_CONTROL MINUS>,
+                <&hold_preferred LA(LC(LG(LEFT_SHIFT))) MINUS>;
+
+            tapping-term-ms = <180>;
+        };
+
+        tap_dance_a: tap_dance_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            bindings =
+                <&hold_preferred LEFT_CONTROL A>,
+                <&hold_preferred LA(LC(LG(LEFT_SHIFT))) A>;
+
+            tapping-term-ms = <180>;
+        };
     };
 
     keymap {
@@ -103,11 +125,11 @@
 
         base {
             bindings = <
-&none  &none                     &none                          &none                       &none                                    &none                                                                       &none                         &none                                    &none                       &none                           &none                               &none
-&none  &layer_tap_preferred 5 Q  &kp W                          &kp E                       &layer_tap_preferred 5 R                 &kp T                                                                       &kp Y                         &kp U                                    &kp I                       &kp O                           &kp P                               &none
-&none  &tap_preferred LCTRL A    &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F              &kp G                         &none           &none                         &kp H                         &tap_preferred RIGHT_SHIFT J             &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
-&none  &layer_tap_preferred 5 Z  &kp X                          &kp C                       &tap_preferred LA(LC(LG(LEFT_SHIFT))) V  &kp B                         &kp LG(LS(N4))  &kp BACKSPACE                 &kp N                         &tap_preferred LA(LC(LG(LEFT_SHIFT))) M  &kp COMMA                   &kp PERIOD                      &layer_tap_preferred 5 FSLH         &none
-&none  &mo 5                     &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 3 ESCAPE            &layer_hold_priority 1 LANG2  &kp SPACE       &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                                    &none                       &mo 6                           &mo 5                               &none
+&none  &none                     &none                          &none                       &none                                    &none                                                                       &none                         &none                                    &none                       &none                           &none                        &none
+&none  &layer_tap_preferred 5 Q  &kp W                          &kp E                       &layer_tap_preferred 5 R                 &kp T                                                                       &kp Y                         &kp U                                    &kp I                       &kp O                           &kp P                        &none
+&none  &tap_dance_a              &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F              &kp G                         &none           &none                         &kp H                         &tap_preferred RIGHT_SHIFT J             &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &tap_dance_minus             &none
+&none  &layer_tap_preferred 5 Z  &kp X                          &kp C                       &tap_preferred LA(LC(LG(LEFT_SHIFT))) V  &kp B                         &kp LG(LS(N4))  &kp BACKSPACE                 &kp N                         &tap_preferred LA(LC(LG(LEFT_SHIFT))) M  &kp COMMA                   &kp PERIOD                      &layer_tap_preferred 5 FSLH  &none
+&none  &mo 5                     &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 3 ESCAPE            &layer_hold_priority 1 LANG2  &kp SPACE       &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                                    &none                       &mo 6                           &mo 5                        &none
             >;
 
             label = "base";
