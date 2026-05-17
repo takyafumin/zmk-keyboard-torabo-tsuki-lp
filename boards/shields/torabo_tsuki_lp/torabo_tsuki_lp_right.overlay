@@ -15,13 +15,13 @@
          33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
          34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
      >;
-    require-prior-idle-ms = <150>; // キー入力中の誤爆防止
+    require-prior-idle-ms = <300>; // キー入力中の誤爆防止
 };
 
 &trackball_listener {
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_temp_layer 4 10000
+        &zip_temp_layer 4 5000
     >;
 
 	scroller {
