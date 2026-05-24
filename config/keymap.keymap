@@ -112,11 +112,11 @@
 
         base {
             bindings = <
-&none  &none                          &none                                    &none                       &none                                    &none                                                                       &none                         &none                                    &none                       &none                           &none                               &none
-&none  &kp Q                          &tap_preferred LA(LC(LG(LEFT_SHIFT))) W  &kp E                       &layer_tap_preferred 5 R                 &kp T                                                                       &kp Y                         &kp U                                    &kp I                       &kp O                           &kp P                               &none
-&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S            &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F              &layer_tap_preferred 1 G      &none           &none                         &kp H                         &tap_preferred RIGHT_SHIFT J             &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
-&none  &layer_tap_preferred 5 Z       &kp X                                    &kp C                       &tap_preferred LA(LC(LG(LEFT_SHIFT))) V  &kp B                         &kp LG(LS(N4))  &kp BACKSPACE                 &kp N                         &tap_preferred LA(LC(LG(LEFT_SHIFT))) M  &kp COMMA                   &kp PERIOD                      &layer_tap_preferred 5 FSLH         &none
-&none  &mo 5                          &mkp RCLK                                &mkp LCLK                   &layer_hold_priority 3 ESCAPE            &layer_hold_priority 1 LANG2  &kp SPACE       &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                                    &none                       &mo 6                           &mo 5                               &none
+&none  &none                          &none                                    &none                       &none                                          &none                                                                       &none                         &none                                    &none                       &none                           &none                               &none
+&none  &kp Q                          &tap_preferred LA(LC(LG(LEFT_SHIFT))) W  &kp E                       &layer_tap_preferred 5 R                       &kp T                                                                       &kp Y                         &kp U                                    &kp I                       &kp O                           &kp P                               &none
+&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S            &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F                    &layer_tap_preferred 1 G      &none           &none                         &kp H                         &tap_preferred RIGHT_SHIFT J             &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred LEFT_CONTROL MINUS  &none
+&none  &layer_tap_preferred 5 Z       &kp X                                    &kp C                       &tap_preferred LA(LC(LG(LEFT_SHIFT))) V        &kp B                         &kp LG(LS(N4))  &kp BACKSPACE                 &kp N                         &tap_preferred LA(LC(LG(LEFT_SHIFT))) M  &kp COMMA                   &kp PERIOD                      &layer_tap_preferred 5 FSLH         &none
+&none  &mo 5                          &mkp RCLK                                &mkp LCLK                   &hold_preferred LA(LC(LG(LEFT_SHIFT))) ESCAPE  &layer_hold_priority 1 LANG2  &kp SPACE       &hold_preferred RSHIFT ENTER  &layer_hold_priority 2 LANG1  &none                                    &none                       &mo 6                           &mo 5                               &none
             >;
 
             label = "base";
@@ -134,21 +134,21 @@
 
         nums {
             bindings = <
-&trans  &trans                    &trans            &trans         &trans          &trans                                         &trans     &trans                              &trans                       &trans                            &trans                      &trans
-&trans  &kp NUMBER_1              &kp NUMBER_2      &kp N3         &kp N4          &kp N5                                         &kp N6     &kp N7                              &kp N8                       &kp N9                            &kp N0                      &trans
-&trans  &tap_preferred LCTRL TAB  &sk LEFT_COMMAND  &sk RIGHT_ALT  &sk LEFT_SHIFT  &trans                     &trans      &trans  &kp PLUS   &tap_preferred LEFT_SHIFT NUMBER_4  &tap_preferred RIGHT_ALT N5  &tap_preferred LEFT_GUI NUMBER_6  &tap_preferred LCTRL MINUS  &trans
-&trans  &kp ESCAPE                &trans            &trans         &trans          &trans                     &trans      &trans  &kp ASTRK  &kp NUMBER_1                        &kp NUMBER_2                 &kp NUMBER_3                      &kp SLASH                   &trans
-&trans  &trans                    &trans            &trans         &trans          &layer_hold_priority 3 N0  &kp DELETE  &trans  &trans     &trans                              &trans                       &trans                            &trans                      &trans
+&trans  &trans                    &trans            &trans         &trans                      &trans                                                         &trans     &trans                              &trans                       &trans                            &trans                      &trans
+&trans  &kp NUMBER_1              &kp NUMBER_2      &kp N3         &kp N4                      &kp N5                                                         &kp N6     &kp N7                              &kp N8                       &kp N9                            &kp N0                      &trans
+&trans  &tap_preferred LCTRL TAB  &sk LEFT_COMMAND  &sk RIGHT_ALT  &sk LEFT_SHIFT              &trans                     &trans                      &trans  &kp PLUS   &tap_preferred LEFT_SHIFT NUMBER_4  &tap_preferred RIGHT_ALT N5  &tap_preferred LEFT_GUI NUMBER_6  &tap_preferred LCTRL MINUS  &trans
+&trans  &kp ESCAPE                &trans            &trans         &trans                      &trans                     &trans                      &trans  &kp ASTRK  &kp NUMBER_1                        &kp NUMBER_2                 &kp NUMBER_3                      &kp SLASH                   &trans
+&trans  &trans                    &trans            &trans         &sk LA(LC(LG(LEFT_SHIFT)))  &layer_hold_priority 3 N0  &sk LG(LC(LA(LEFT_SHIFT)))  &trans  &trans     &trans                              &trans                       &trans                            &trans                      &trans
             >;
         };
 
         extra {
             bindings = <
-&trans  &trans        &trans        &trans         &trans          &trans                  &trans    &trans         &trans       &trans   &trans   &trans
-&trans  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5                  &kp F6    &kp F7         &kp F8       &kp F9   &kp F10  &trans
-&trans  &sk LCTRL     &sk LEFT_WIN  &sk RIGHT_ALT  &sk LEFT_SHIFT  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &trans   &trans
-&trans  &kp CAPSLOCK  &trans        &trans         &trans          &trans  &trans  &trans  &trans    &kp F11        &kp F12      &trans   &trans   &trans
-&trans  &trans        &trans        &trans         &trans          &trans  &trans  &trans  &trans    &trans         &trans       &trans   &trans   &trans
+&trans  &trans        &trans        &trans         &trans          &trans                  &trans    &trans         &trans       &trans   &trans                      &trans
+&trans  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5                  &kp F6    &kp F7         &kp F8       &kp F9   &kp F10                     &trans
+&trans  &sk LCTRL     &sk LEFT_WIN  &sk RIGHT_ALT  &sk LEFT_SHIFT  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &sk LA(LC(LG(LEFT_SHIFT)))  &trans
+&trans  &kp CAPSLOCK  &trans        &trans         &trans          &trans  &trans  &trans  &trans    &kp F11        &kp F12      &trans   &trans                      &trans
+&trans  &trans        &trans        &trans         &trans          &trans  &trans  &trans  &trans    &trans         &trans       &trans   &trans                      &trans
             >;
         };
 
