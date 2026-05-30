@@ -6,7 +6,7 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
 
-&msc { acceleration-exponent = <3>; };
+&msc { acceleration-exponent = <0>; };
 
 // マウスキーを押した後、200mでbase layerに戻る(ダブルクリック猶予)
 
