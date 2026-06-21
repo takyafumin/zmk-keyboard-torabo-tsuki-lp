@@ -2,6 +2,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "torabo_tsuki_lp_layouts.dtsi"
 
+// 慣性スクロール用
+#include <zmk-input-inertia/input/processor/input_inertia.dtsi>
+
 / {
     chosen {
         zmk,physical-layout = &physical_layout_l;
