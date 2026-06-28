@@ -1,7 +1,6 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 // Auto Mouse Layer用のzip_temp_layer設定
 &zip_temp_layer {
@@ -23,16 +22,16 @@
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &zip_temp_layer 4 5000
-    >,
-    <&zip_inertia>;
+    >;
 
 	scroller {
 	    layers = <5>;
         input-processors =
-            /* <&zip_xy_to_scroll_mapper>, */
-            /* <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>, */
-            <&zip_scroll_x_scaler 0 1>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_scroll_scaler 1 12>;
+            /* <&zip_scroll_x_scaler 0 1>, */
+            /* <&zip_scroll_scaler 1 12>; */
             /* <&zip_inertia>; */
         process-next;
     };
