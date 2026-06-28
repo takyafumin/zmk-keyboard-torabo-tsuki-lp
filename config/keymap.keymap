@@ -22,12 +22,17 @@
 
         jp-right {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <33 34>;
+            key-positions = <34 35>;
         };
 
         en-left {
             bindings = <&kp LANG2>;
-            key-positions = <28 27>;
+            key-positions = <27 26>;
+        };
+
+        capslock {
+            bindings = <&kp CAPS>;
+            key-positions = <49 48>;
         };
     };
 
