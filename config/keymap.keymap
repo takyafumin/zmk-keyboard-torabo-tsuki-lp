@@ -22,12 +22,12 @@
 
         jp-right {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
         };
 
         en-left {
             bindings = <&kp LANG2>;
-            key-positions = <29 28>;
+            key-positions = <28 27>;
         };
     };
 
@@ -116,7 +116,7 @@
             bindings = <
 &trans  &trans        &trans        &trans         &trans          &trans                  &trans    &trans         &trans       &trans   &trans                &trans
 &trans  &kp F1        &kp F2        &kp F3         &kp F4          &kp F5                  &kp F6    &kp F7         &kp F8       &kp F9   &kp F10               &trans
-&trans  &sk LCTRL     &sk LEFT_WIN  &sk RIGHT_ALT  &sk LEFT_SHIFT  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &kp LG(LS(NUMBER_4))  &trans
+&trans  &sk LCTRL     &kp LEFT_WIN  &kp RIGHT_ALT  &sk LEFT_SHIFT  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &kp LG(LS(NUMBER_4))  &trans
 &trans  &kp CAPSLOCK  &trans        &trans         &trans          &trans  &trans  &trans  &trans    &kp F11        &kp F12      &trans   &trans                &trans
 &trans  &trans        &trans        &trans         &trans          &trans  &trans  &trans  &trans    &trans         &trans       &trans   &trans                &trans
             >;
@@ -146,7 +146,7 @@
             bindings = <
 &trans  &trans                    &trans            &trans         &trans                      &trans                                        &trans                        &trans                           &trans                             &trans                              &trans                          &trans
 &trans  &kp EXCL                  &kp AT            &kp HASH       &kp DOLLAR                  &kp PERCENT                                   &kp CARET                     &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS           &trans
-&trans  &tap_preferred LCTRL TAB  &sk LEFT_COMMAND  &sk RIGHT_ALT  &sk LEFT_SHIFT              &sk LA(LC(LG(LSHFT)))  &trans  &trans         &kp LEFT                      &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL SEMICOLON  &trans
+&trans  &tap_preferred LCTRL TAB  &kp LEFT_COMMAND  &kp RIGHT_ALT  &sk LEFT_SHIFT              &sk LA(LC(LG(LSHFT)))  &trans  &trans         &kp LEFT                      &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RCTRL SEMICOLON  &trans
 &trans  &kp ESCAPE                &kp GRAVE         &kp TILDE      &sk LA(LC(LG(LEFT_SHIFT)))  &trans                 &trans  &trans         &kp EQUAL                     &kp SINGLE_QUOTE                 &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                   &kp BACKSLASH                   &trans
 &trans  &trans                    &trans            &trans         &trans                      &trans                 &trans  &kp BACKSPACE  &layer_hold_priority 2 ENTER  &trans                           &trans                             &trans                              &kp DELETE                      &trans
             >;
