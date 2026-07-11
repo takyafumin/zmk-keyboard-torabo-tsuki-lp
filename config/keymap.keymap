@@ -39,6 +39,16 @@
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <49 50>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <32 33>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <39 40>;
+        };
     };
 
     behaviors {
