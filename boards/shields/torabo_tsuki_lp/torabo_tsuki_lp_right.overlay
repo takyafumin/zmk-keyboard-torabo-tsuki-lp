@@ -7,21 +7,23 @@
      excluded-positions = <
          // 左手モディファイアキー
          25 // A (tap:A / hold:Ctrl)
-         27 // D (tap:D / hold:Alt)
          26 // S (tap:S / hold:Cmd)
+         27 // D (tap:D / hold:Alt)
          28 // F (tap:F / hold:Shift)
          
          // 右手モディファイア・マウスクリックキー
          33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
-         34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
+         //34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
+         49 // dot (mouse:RCLK)
+         61 // right thumb key
      >;
-    require-prior-idle-ms = <150>; // キー入力中の誤爆防止
+    require-prior-idle-ms = <300>; // キー入力中の誤爆防止
 };
 
 &trackball_listener {
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_temp_layer 4 10000
+        &zip_temp_layer 4 5000
     >;
 
 	scroller {
@@ -29,7 +31,10 @@
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_scroll_scaler 1 48>;
+            <&zip_scroll_scaler 1 12>;
+            /* <&zip_scroll_x_scaler 0 1>, */
+            /* <&zip_scroll_scaler 1 12>; */
+            /* <&zip_inertia>; */
         process-next;
     };
 };
