@@ -34,6 +34,11 @@
             bindings = <&kp CAPS>;
             key-positions = <49 48>;
         };
+
+        right-thumb {
+            bindings = <&none>;
+            key-positions = <61 64>;
+        };
     };
 
     behaviors {
