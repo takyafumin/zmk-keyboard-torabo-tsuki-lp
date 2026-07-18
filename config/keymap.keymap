@@ -142,7 +142,7 @@
 &trans  &trans          &trans            &trans        &trans            &trans                                     &trans     &trans                                 &trans                       &trans                                 &trans                           &trans
 &trans  &kp NUMBER_1    &kp NUMBER_2      &kp N3        &kp N4            &kp N5                                     &kp N6     &kp N7                                 &kp N8                       &kp N9                                 &kp N0                           &trans
 &trans  &sk LEFT_SHIFT  &sk LEFT_COMMAND  &sk LEFT_ALT  &sk LEFT_CONTROL  &trans                     &trans  &trans  &kp PLUS   &tap_preferred RIGHT_CONTROL NUMBER_4  &tap_preferred RIGHT_ALT N5  &tap_preferred RIGHT_COMMAND NUMBER_6  &tap_preferred LEFT_SHIFT MINUS  &trans
-&trans  &kp LANGUAGE_2  &trans            &trans        &trans            &trans                     &trans  &trans  &kp ASTRK  &kp NUMBER_1                           &kp NUMBER_2                 &kp NUMBER_3                           &kp LANGUAGE_1                   &trans
+&trans  &trans          &trans            &trans        &trans            &trans                     &trans  &trans  &kp ASTRK  &kp NUMBER_1                           &kp NUMBER_2                 &kp NUMBER_3                           &kp N0                           &trans
 &trans  &trans          &trans            &trans        &trans            &layer_hold_priority 3 N0  &trans  &trans  &trans     &trans                                 &trans                       &trans                                 &trans                           &trans
             >;
         };
