@@ -10,11 +10,11 @@
          26 // S (tap:S / hold:Cmd)
          27 // D (tap:D / hold:Alt)
          28 // F (tap:F / hold:Shift)
-         
+
          // 右手モディファイア・マウスクリックキー
          33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
          //34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
-         49 // dot (mouse:RCLK)
+         //49 // dot (mouse:RCLK)
          61 // right thumb key
      >;
     require-prior-idle-ms = <300>; // キー入力中の誤爆防止
