@@ -13,7 +13,7 @@
 
          // 右手モディファイア・マウスクリックキー
          33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
-         //34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
+         34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
          //49 // dot (mouse:RCLK)
          61 // right thumb key
      >;
