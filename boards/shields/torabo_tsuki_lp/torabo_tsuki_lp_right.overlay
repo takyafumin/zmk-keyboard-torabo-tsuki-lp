@@ -16,6 +16,8 @@
          // 34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
          // 49 // dot (mouse:RCLK)
          58 // left thumbs right
+         59 // right thumbs left
+         60 // right thumbs home
          // 61 // right thumb key
      >;
     require-prior-idle-ms = <300>; // キー入力中の誤爆防止
