@@ -122,11 +122,11 @@
 
         base {
             bindings = <
-&none  &none                          &none                          &none                       &none                          &none                                                         &none                              &none                         &none                       &none                           &none                                &none
-&none  &kp Q                          &kp W                          &kp E                       &kp R                          &kp T                                                         &kp Y                              &kp U                         &kp I                       &kp O                           &kp P                                &none
-&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                              &none           &none      &kp H                              &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &layer_tap_preferred 7 V       &kp B                              &kp LG(LS(N4))  &mkp RCLK  &kp N                              &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
-&none  &layer_hold_priority 7 ESCAPE  &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 2 ESCAPE  &layer_hold_priority 1 LANGUAGE_2  &kp SPACE       &kp ENTER  &layer_hold_priority 2 LANGUAGE_1  &none                         &none                       &mo 6                           &kp TAB                              &none
+&none  &none                          &none                          &none                       &none                          &none                                                                       &none                              &none                         &none                       &none                           &none                                &none
+&none  &kp Q                          &kp W                          &kp E                       &kp R                          &kp T                                                                       &kp Y                              &kp U                         &kp I                       &kp O                           &kp P                                &none
+&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                              &none                         &none      &kp H                              &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
+&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &layer_tap_preferred 7 V       &kp B                              &kp LG(LS(N4))                &mkp RCLK  &kp N                              &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
+&none  &layer_hold_priority 4 ESCAPE  &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 2 ESCAPE  &layer_hold_priority 1 LANGUAGE_2  &layer_tap_preferred 4 SPACE  &kp ENTER  &layer_hold_priority 2 LANGUAGE_1  &none                         &none                       &mo 6                           &kp TAB                              &none
             >;
 
             label = "base";
@@ -174,11 +174,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
