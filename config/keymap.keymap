@@ -21,23 +21,23 @@
         compatible = "zmk,combos";
 
         jp-right {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <34 33>;
+            bindings = <&none>;
+            key-positions = <34 47>;
         };
 
         en-left {
-            bindings = <&kp LANG2>;
+            bindings = <&none>;
             key-positions = <27 28>;
         };
 
         capslock {
             bindings = <&kp CAPS>;
-            key-positions = <49 48>;
+            key-positions = <47 48>;
         };
 
         sk-shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <47 48>;
+            key-positions = <33 34>;
         };
 
         backspace {
@@ -53,6 +53,11 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <21 22>;
+        };
+
+        test {
+            bindings = <&none>;
+            key-positions = <57 58 59 60>;
         };
     };
 
