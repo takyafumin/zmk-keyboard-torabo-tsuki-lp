@@ -22,7 +22,7 @@
 
         jp-right {
             bindings = <&none>;
-            key-positions = <34 47>;
+            key-positions = <34 33>;
         };
 
         en-left {
@@ -35,9 +35,9 @@
             key-positions = <47 48>;
         };
 
-        sk-shift {
+        sk-shift-left {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <33 34>;
+            key-positions = <34 35>;
         };
 
         backspace {
@@ -55,9 +55,14 @@
             key-positions = <21 22>;
         };
 
-        test {
-            bindings = <&none>;
-            key-positions = <57 58 59 60>;
+        sk-shift-thumbs {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <57 60>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <25 26>;
         };
     };
 
@@ -122,11 +127,11 @@
 
         base {
             bindings = <
-&none  &none                          &none                          &none                       &none                          &none                                                                       &none                              &none                         &none                       &none                           &none                                &none
-&none  &kp Q                          &kp W                          &kp E                       &kp R                          &kp T                                                                       &kp Y                              &kp U                         &kp I                       &kp O                           &kp P                                &none
-&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F    &kp G                              &none                         &none      &kp H                              &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &layer_tap_preferred 7 V       &kp B                              &kp LG(LS(N4))                &mkp RCLK  &kp N                              &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
-&none  &layer_hold_priority 4 ESCAPE  &mkp RCLK                      &mkp LCLK                   &layer_hold_priority 2 ESCAPE  &layer_hold_priority 1 LANGUAGE_2  &layer_tap_preferred 4 SPACE  &kp ENTER  &layer_hold_priority 2 LANGUAGE_1  &none                         &none                       &mo 6                           &kp TAB                              &none
+&none  &none                          &none                          &none                       &none                                &none                                                         &none                              &none                         &none                       &none                           &none                                &none
+&none  &kp Q                          &kp W                          &kp E                       &kp R                                &kp T                                                         &kp Y                              &kp U                         &kp I                       &kp O                           &kp P                                &none
+&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F          &kp G                              &none           &none      &kp H                              &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
+&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &layer_tap_preferred 7 V             &kp B                              &kp LG(LS(N4))  &mkp RCLK  &kp N                              &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
+&none  &layer_hold_priority 4 ESCAPE  &mkp RCLK                      &mkp LCLK                   &hold_preferred LEFT_COMMAND ESCAPE  &layer_hold_priority 1 LANGUAGE_2  &kp SPACE       &kp ENTER  &layer_hold_priority 2 LANGUAGE_1  &none                         &none                       &mo 6                           &kp TAB                              &none
             >;
 
             label = "base";
@@ -166,7 +171,7 @@
             bindings = <
 &trans  &trans        &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &trans        &trans
 &trans  &kp ESCAPE    &trans  &trans  &trans  &trans                  &trans         &trans     &trans     &trans  &kp DELETE    &trans
-&trans  &kp TAB       &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans     &trans     &trans  &kp ENTER     &trans
+&trans  &kp TAB       &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &mkp LCLK  &mkp RCLK  &trans  &kp ENTER     &trans
 &trans  &kp CAPSLOCK  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &kp LANG2  &kp LANG1  &trans  &trans        &trans
 &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE      &trans     &trans     &trans  &kp CAPSLOCK  &trans
             >;
@@ -174,11 +179,11 @@
 
         mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
             >;
         };
 
