@@ -12,13 +12,13 @@
          28 // F (tap:F / hold:Shift)
 
          // 右手モディファイア・マウスクリックキー
-         // 33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
+         33 // J (base:J/Shift / mouse:LCLK) ※AML中クリック可能  
          // 34 // K (base:K/Alt / mouse:RCLK) ※AML中クリック可能
          // 49 // dot (mouse:RCLK)
-         57 // left thumbs home
+         // 57 // left thumbs home
          // 58 // left thumbs right
-         59 // right thumbs left
-         60 // right thumbs home
+         // 59 // right thumbs left
+         // 60 // right thumbs home
          // 61 // right thumb key
      >;
     require-prior-idle-ms = <300>; // キー入力中の誤爆防止
@@ -31,7 +31,7 @@
     ;
 
 	scroller {
-	    layers = <4>;
+	    layers = <1>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
