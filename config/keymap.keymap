@@ -20,23 +20,23 @@
     combos {
         compatible = "zmk,combos";
 
-        jp-right {
-            bindings = <&none>;
+        sk-shift {
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <34 33>;
         };
 
-        en-left {
+        none {
             bindings = <&none>;
             key-positions = <27 28>;
         };
 
-        capslock {
-            bindings = <&kp CAPS>;
+        caps-word {
+            bindings = <&caps_word>;
             key-positions = <47 48>;
         };
 
-        sk-shift-left {
-            bindings = <&sk LEFT_SHIFT>;
+        jp {
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <34 35>;
         };
 
@@ -56,13 +56,13 @@
         };
 
         sk-shift-thumbs {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&esc_en>;
             key-positions = <57 60>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <25 26>;
+            key-positions = <29 28>;
         };
     };
 
@@ -96,29 +96,17 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
-            quick-tap-ms = <180>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <150>;
         };
+    };
 
-        layer_tap_preferred: layer_tap_preferred {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_PREFERRED";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <125>;
-            flavor = "tap-preferred";
-        };
-
-        tap_dance_lang: tap_dance_lang {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LANG";
+    macros {
+        esc_en: esc_en {
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG2>, <&kp LANG1>;
-
-            tapping-term-ms = <180>;
+            bindings = <&kp ESCAPE &kp LANGUAGE_2>;
+            label = "ESC_EN";
         };
     };
 
@@ -127,11 +115,11 @@
 
         base {
             bindings = <
-&none  &none                          &none                          &none                       &none                                &none                                                         &none                              &none                         &none                       &none                           &none                                &none
-&none  &kp Q                          &kp W                          &kp E                       &kp R                                &kp T                                                         &kp Y                              &kp U                         &kp I                       &kp O                           &kp P                                &none
-&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F          &kp G                              &none           &none      &kp H                              &tap_preferred RIGHT_SHIFT J  &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &layer_tap_preferred 7 V             &kp B                              &kp LG(LS(N4))  &mkp RCLK  &kp N                              &kp M                         &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
-&none  &layer_hold_priority 4 ESCAPE  &mkp RCLK                      &mkp LCLK                   &hold_preferred LEFT_COMMAND ESCAPE  &layer_hold_priority 1 LANGUAGE_2  &kp SPACE       &kp ENTER  &layer_hold_priority 2 LANGUAGE_1  &none                         &none                       &mo 6                           &kp TAB                              &none
+&none  &none                          &none                          &none                       &none                                    &none                                                         &none                              &none                                    &none                       &none                           &none                                &none
+&none  &kp Q                          &kp W                          &kp E                       &kp R                                    &kp T                                                         &kp Y                              &kp U                                    &kp I                       &kp O                           &kp P                                &none
+&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F              &kp G                              &none           &none      &kp H                              &tap_preferred RIGHT_SHIFT J             &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
+&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &tap_preferred LA(LG(LC(LEFT_SHIFT))) V  &kp B                              &kp LG(LS(N4))  &mkp RCLK  &kp N                              &tap_preferred LA(LC(LG(LEFT_SHIFT))) M  &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
+&none  &layer_hold_priority 3 ESCAPE  &mkp RCLK                      &mkp LCLK                   &hold_preferred LEFT_COMMAND ESCAPE      &layer_hold_priority 1 LANGUAGE_2  &kp SPACE       &kp ENTER  &layer_hold_priority 2 LANGUAGE_1  &none                                    &none                       &mo 6                           &kp TAB                              &none
             >;
 
             label = "base";
@@ -139,11 +127,11 @@
 
         marks {
             bindings = <
-&trans  &trans            &trans            &trans        &trans                      &trans                              &trans                        &trans                           &trans                             &trans                              &trans                             &trans
-&trans  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR                  &kp PERCENT                         &kp CARET                     &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS              &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_SHIFT              &kp GRAVE    &trans  &trans         &kp LEFT                      &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RIGHT_CONTROL SEMI  &trans
-&trans  &kp TAB           &kp CAPSLOCK      &trans        &sk LA(LC(LG(LEFT_SHIFT)))  &kp TILDE    &trans  &trans         &kp EQUAL                     &kp SINGLE_QUOTE                 &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                   &kp BACKSLASH                      &trans
-&trans  &trans            &trans            &trans        &trans                      &trans       &trans  &kp BACKSPACE  &layer_hold_priority 3 ENTER  &trans                           &trans                             &trans                              &kp DELETE                         &trans
+&trans  &trans            &trans            &trans        &trans                      &trans                              &trans                      &trans                           &trans                             &trans                              &trans                             &trans
+&trans  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR                  &kp PERCENT                         &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS              &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_SHIFT              &kp GRAVE    &trans  &trans         &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RIGHT_CONTROL SEMI  &trans
+&trans  &kp TAB           &kp CAPSLOCK      &trans        &sk LA(LC(LG(LEFT_SHIFT)))  &kp TILDE    &trans  &trans         &kp EQUAL                   &kp SINGLE_QUOTE                 &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                   &kp BACKSLASH                      &trans
+&trans  &trans            &trans            &trans        &trans                      &trans       &trans  &kp BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                         &trans
             >;
         };
 
