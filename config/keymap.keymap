@@ -22,17 +22,17 @@
 
         sk-shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <34 33>;
+            key-positions = <47 48>;
         };
 
         none {
             bindings = <&none>;
-            key-positions = <27 28>;
+            key-positions = <29 30>;
         };
 
         caps-word {
             bindings = <&caps_word>;
-            key-positions = <47 48>;
+            key-positions = <33 34>;
         };
 
         jp {
@@ -47,7 +47,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <41 42>;
+            key-positions = <27 28>;
         };
 
         delete {
@@ -63,6 +63,11 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <29 28>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <48 49>;
         };
     };
 
@@ -97,8 +102,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
-            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <180>;
         };
     };
 
