@@ -25,9 +25,9 @@
             key-positions = <47 48>;
         };
 
-        none {
-            bindings = <&none>;
-            key-positions = <29 30>;
+        en {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <28 27>;
         };
 
         caps-word {
