@@ -202,7 +202,7 @@
         };
 
         layer_new {
-            label = "base";
+            label = "new";
             bindings = <
 &none  &none                          &none                          &none                       &none                                    &none                                                    &none                         &none                                    &none                       &none                           &none                                &none
 &none  &mt ESCAPE Q                   &kp W                          &kp E                       &kp R                                    &kp T                                                    &kp Y                         &kp U                                    &kp I                       &kp O                           &kp P                                &none
