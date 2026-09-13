@@ -55,11 +55,6 @@
             key-positions = <21 22>;
         };
 
-        sk-shift-thumbs {
-            bindings = <&esc_en>;
-            key-positions = <57 60>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <29 28>;
@@ -104,15 +99,6 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <125>;
             quick-tap-ms = <180>;
-        };
-    };
-
-    macros {
-        esc_en: esc_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp LANGUAGE_2>;
-            label = "ESC_EN";
         };
     };
 
