@@ -105,11 +105,11 @@
 
         marks {
             bindings = <
-&trans  &trans            &trans            &trans        &trans                                 &trans                                            &trans                      &trans                           &trans                             &trans                              &trans                             &trans
-&trans  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR                             &kp PERCENT                                       &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS              &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &hold_preferred LEFT_SHIFT LANGUAGE_2  &kp GRAVE    &trans                &trans         &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RIGHT_CONTROL SEMI  &trans
-&trans  &caps_word        &kp CAPSLOCK      &trans        &sk LA(LC(LG(LEFT_SHIFT)))             &kp TILDE    &kp LS(LG(NUMBER_4))  &trans         &kp EQUAL                   &kp SINGLE_QUOTE                 &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                   &kp BACKSLASH                      &trans
-&trans  &trans            &trans            &trans        &trans                                 &trans       &trans                &kp BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                         &trans
+&trans  &trans            &trans            &trans        &trans                                 &trans                                            &trans                      &trans                           &trans                             &trans                              &trans                                     &trans
+&trans  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR                             &kp PERCENT                                       &kp CARET                   &kp AMPERSAND                    &kp ASTERISK                       &kp LEFT_PARENTHESIS                &kp RIGHT_PARENTHESIS                      &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp LEFT_ALT  &hold_preferred LEFT_SHIFT LANGUAGE_2  &kp GRAVE    &trans                &trans         &kp LEFT                    &tap_preferred RIGHT_SHIFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred RIGHT_COMMAND RIGHT  &tap_preferred RIGHT_CONTROL SINGLE_QUOTE  &trans
+&trans  &caps_word        &kp CAPSLOCK      &trans        &sk LA(LC(LG(LEFT_SHIFT)))             &kp TILDE    &kp LS(LG(NUMBER_4))  &trans         &kp EQUAL                   &kp SEMI                         &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                   &kp BACKSLASH                              &trans
+&trans  &trans            &trans            &trans        &trans                                 &trans       &trans                &kp BACKSPACE  &layer_hold_priority 3 TAB  &trans                           &trans                             &trans                              &kp DELETE                                 &trans
             >;
         };
 
