@@ -24,12 +24,12 @@
 
         sk-shift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <47 48>;
+            key-positions = <33 34>;
         };
 
         esc {
-            bindings = <&esc_en>;
-            key-positions = <33 34>;
+            bindings = <&caps_word>;
+            key-positions = <47 48>;
         };
 
         backspace {
@@ -40,6 +40,11 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <48 49>;
+        };
+
+        tab2 {
+            bindings = <&kp TAB>;
+            key-positions = <35 36>;
         };
     };
 
