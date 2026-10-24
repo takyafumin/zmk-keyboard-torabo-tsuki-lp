@@ -117,7 +117,7 @@
             bindings = <
 &trans  &trans                             &trans            &trans        &trans          &trans                                                   &trans  &trans                                 &trans         &trans             &trans            &trans
 &trans  &kp NUMBER_1                       &kp NUMBER_2      &kp N3        &kp N4          &kp N5                                                   &kp N6  &kp N7                                 &kp N8         &kp N9             &kp N0            &trans
-&trans  &sk LEFT_CONTROL                   &sk LEFT_COMMAND  &sk LEFT_ALT  &sk LEFT_SHIFT  &trans                     &trans                &trans  &trans  &hold_preferred LEFT_SHIFT LANGUAGE_1  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &kp LEFT_CONTROL  &trans
+&trans  &kp LEFT_CONTROL                   &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans                     &trans                &trans  &trans  &hold_preferred LEFT_SHIFT LANGUAGE_1  &kp RIGHT_ALT  &kp RIGHT_COMMAND  &kp LEFT_CONTROL  &trans
 &trans  &hold_preferred LEFT_SHIFT ESCAPE  &trans            &trans        &trans          &trans                     &kp LG(LS(NUMBER_4))  &trans  &trans  &trans                                 &trans         &trans             &trans            &trans
 &trans  &trans                             &trans            &trans        &trans          &layer_hold_priority 3 N0  &trans                &trans  &trans  &trans                                 &trans         &trans             &trans            &trans
             >;
@@ -160,27 +160,6 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &bt BT_CLR    &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        arrow {
-            bindings = <
-&trans  &trans                  &trans  &trans  &trans                      &trans                  &trans          &trans                     &trans                             &trans                             &trans  &trans
-&trans  &trans                  &trans  &trans  &trans                      &trans                  &trans          &trans                     &trans                             &trans                             &trans  &trans
-&trans  &trans                  &trans  &trans  &trans                      &trans  &trans  &trans  &kp LEFT_ARROW  &tap_preferred RSHFT DOWN  &tap_preferred RIGHT_ALT UP_ARROW  &tap_preferred LEFT_CONTROL RIGHT  &trans  &trans
-&trans  &sk LA(LC(LG(LSHIFT)))  &trans  &trans  &sk LA(LC(LG(LSHFT)))       &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN              &kp PAGE_UP                        &kp END                            &trans  &trans
-&trans  &trans                  &trans  &trans  &kp LA(LC(LG(LEFT_SHIFT)))  &trans  &trans  &trans  &trans          &trans                     &trans                             &trans                             &trans  &trans
-            >;
-        };
-
-        layer_new {
-            label = "new";
-            bindings = <
-&none  &none                          &none                          &none                       &none                                    &none                                               &none                         &none                                    &none                       &none                           &none                                &none
-&none  &kp Q                          &kp W                          &kp E                       &kp R                                    &kp T                                               &kp Y                         &kp U                                    &kp I                       &kp O                           &kp P                                &none
-&none  &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_COMMAND S  &tap_preferred RIGHT_ALT D  &tap_preferred LEFT_SHIFT F              &kp G                         &none      &none      &kp H                         &tap_preferred RIGHT_SHIFT J             &tap_preferred RIGHT_ALT K  &tap_preferred RIGHT_COMMAND L  &hold_preferred RIGHT_CONTROL MINUS  &none
-&none  &tap_preferred LEFT_SHIFT Z    &kp X                          &kp C                       &tap_preferred LA(LG(LC(LEFT_SHIFT))) V  &kp B                         &none      &mkp RCLK  &kp N                         &tap_preferred LA(LC(LG(LEFT_SHIFT))) M  &kp COMMA                   &kp PERIOD                      &tap_preferred LEFT_SHIFT SLASH      &none
-&none  &tog 0                         &mkp RCLK                      &mkp LCLK                   &hold_preferred LEFT_COMMAND ESCAPE      &layer_hold_priority 1 SPACE  &mkp LCLK  &kp TAB    &layer_hold_priority 2 ENTER  &none                                    &none                       &mo 6                           &kp TAB                              &none
             >;
         };
     };
